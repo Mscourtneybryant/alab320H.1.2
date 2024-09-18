@@ -1,32 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Sartre's List</h1>
-        <h2>Better-Dressed People</h2>
-        <nav aria-label="Main Navigation" role="navigation">
-            <ul className="theNav">
-                <li><a href="#womens">Women's</a></li>
-                <li><a href="#mens">Men's</a></li>
-                <li><a href="#onTheStreet">On the Street</a></li>
-                <li><a href="#theCatwalk">The Catwalk</a></li>
-                <li><a href="#adWatch">AdWatch</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-    </header>
+import React from 'react';
+import blog1 from './photos/blog1.jpg';
+import blog2 from './photos/blog2.jpg'
 
-    <main>
-        <article>
+
+const Article = () => {
+  return (
+    <div>
+             <article>
             <h4 >11/12/20</h4>
             <h3>On the Street in Brooklyn</h3>
-             <img className="blogImg" src="./photos/blog-image-1.jpg" alt="blogimg1"/>
+             <img src={blog1} alt="blog1"/>
             <p className="blogPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -42,7 +25,7 @@
         </article>
         <article>
             <h3>Vintage in Vogue</h3>
-            <img className="blogImg" src="./photos/blog-image-2.jpg" alt="blogimg2"/>
+            <img src={blog2} alt="blog2"/>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -54,21 +37,9 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </article>
-    </main>
 
-    <footer>
-        <nav aria-label="Footer links" role="navigation">
-            <ul className="theNav">
-                <li><a href="#womens">Women's</a></li>
-                <li><a href="#mens">Men's</a></li>
-                <li><a href="#onTheStreet">On the Street</a></li>
-                <li><a href="#theCatwalk">The Catwalk</a></li>
-                <li><a href="#adWatch">AdWatch</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2024 My Website</p>
-    </footer>
-    
-</body>
-</html>
+    </div>
+  )
+}
+
+export default Article
